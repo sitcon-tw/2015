@@ -1,0 +1,20 @@
+// Susy Grid
+
+@import "susy";
+
+$susy: (
+  container: 1200px,
+  columns: 12,
+  gutters: 1/4,
+  box-sizing: border-box
+);
+
+.container {
+  @include container;
+}
+
+.row {
+  clear: both;
+
+  @include clearfix;
+}

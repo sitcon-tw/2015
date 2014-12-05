@@ -1,0 +1,49 @@
+// Base
+
+@import "normalize"; // CSS Reset
+@import "compass";
+
+@import "mixin"; // Load Custom Mixin Feature
+@import "common"; // Load common style
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  background: $secondaryColor;
+}
+
+body {
+  color: $primaryColor;
+  background: image-url("bg-grid.png");
+}
+
+a {
+  color: $primaryColor;
+  text-decoration: none;
+}
+
+@include establish-baseline;
+
+// Base Element
+
+p {
+  color: $gray;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid $grayAlpha;
+}
+
+// Base Display
+
+.wrapper {
+  @include clearfix;
+}
+
+.color-gray {
+  color: $gray;
+}

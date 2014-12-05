@@ -1,0 +1,6 @@
+// Arrow 1.0
+
+@mixin arrow($size, $color) { // Direction not support now, only support right
+  border: $size solid transparent;
+  border-left: $size solid $color;
+}
