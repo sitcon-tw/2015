@@ -285,7 +285,7 @@ html {
 /* line 18, ../sass/_base.scss */
 body {
   color: #BA5347;
-  background: url('../images/bg-grid.png?1417831456');
+  background: url('../images/bg-grid.png?1417832065');
 }
 
 /* line 23, ../sass/_base.scss */
@@ -383,10 +383,15 @@ hr {
 
 /* line 4, ../sass/layout/_cfp.scss */
 #landing {
-  margin: 100px auto;
+  margin: 100px auto 50px;
 }
 
-/* line 9, ../sass/layout/_cfp.scss */
+/* line 8, ../sass/layout/_cfp.scss */
+#location {
+  margin: 50px auto 75px;
+}
+
+/* line 13, ../sass/layout/_cfp.scss */
 #topic {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -396,7 +401,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 13, ../sass/layout/_cfp.scss */
+/* line 17, ../sass/layout/_cfp.scss */
 #introduce {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -406,7 +411,7 @@ hr {
   margin-right: 1.6949152542%;
 }
 
-/* line 17, ../sass/layout/_cfp.scss */
+/* line 21, ../sass/layout/_cfp.scss */
 #spirit {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -416,13 +421,13 @@ hr {
   margin-right: 1.6949152542%;
 }
 
-/* line 21, ../sass/layout/_cfp.scss */
+/* line 25, ../sass/layout/_cfp.scss */
 #footer {
   margin-top: 2em;
   margin-bottom: 3em;
 }
 
-/* line 27, ../sass/layout/_cfp.scss */
+/* line 31, ../sass/layout/_cfp.scss */
 .row .left {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -431,7 +436,7 @@ hr {
   float: left;
   margin-right: 1.6949152542%;
 }
-/* line 28, ../sass/layout/_cfp.scss */
+/* line 32, ../sass/layout/_cfp.scss */
 .row .right {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -441,7 +446,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 31, ../sass/layout/_cfp.scss */
+/* line 35, ../sass/layout/_cfp.scss */
 .panel {
   position: relative;
   padding: 2em;
@@ -449,7 +454,7 @@ hr {
   margin-top: 1em;
   margin-bottom: 1em;
 }
-/* line 39, ../sass/layout/_cfp.scss */
+/* line 43, ../sass/layout/_cfp.scss */
 .panel:before, .panel:after {
   position: absolute;
   top: -4px;
@@ -457,11 +462,11 @@ hr {
   content: '';
   border-left: 2px solid #DADEDC;
 }
-/* line 48, ../sass/layout/_cfp.scss */
+/* line 52, ../sass/layout/_cfp.scss */
 .panel:before {
   left: -6px;
 }
-/* line 52, ../sass/layout/_cfp.scss */
+/* line 56, ../sass/layout/_cfp.scss */
 .panel:after {
   right: -6px;
 }
