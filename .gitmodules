@@ -1,0 +1,6 @@
+[submodule "compass"]
+	path = compass
+	url = https://github.com/Igosuki/compass-mixins
+[submodule "normalize"]
+	path = normalize
+	url = https://github.com/appleboy/normalize.scss

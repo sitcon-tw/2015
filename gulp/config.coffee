@@ -22,7 +22,7 @@ module.exports = {
     src: SRC_PATH + '/sass/**/*.{scss,sass,css}'
     dest: DEST_PATH + '/stylesheets'
     devDest: TMP_PATH + '/stylesheets'
-    includePaths: ['./sass-lib']
+    includePaths: ['./sass-lib', './compass/lib', './normalize']
     imagePath: '/images'
   },
   js: {
