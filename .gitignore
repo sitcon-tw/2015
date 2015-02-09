@@ -6,3 +6,8 @@ stylesheets/
 fire_app_log.txt
 build_*/
 vendor/
+node_modules/
+npm-debug.log
+tmp/
+dest/
+bower_components/
