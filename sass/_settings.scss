@@ -1,2 +1,9 @@
 // Settings
 
+$primaryColor: #BA5347; // Red
+$secondaryColor: #151924; // Dark Blue
+
+$darkPrimaryColor: darken($primaryColor, 25%);
+
+$gray: #DADEDC;
+$grayAlpha: rgba($gray, 0.5);

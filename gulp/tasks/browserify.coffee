@@ -25,7 +25,7 @@ gulp.task 'js', ->
          .on 'error', -> @emit 'end'
          .pipe source('app.js')
          .pipe buffer()
-         .pipe $.sourcemaps.init({ loadmpas: true })
+         .pipe $.sourcemaps.init({ loadMpas: true })
          .pipe $.sourcemaps.write('./')
          .pipe gulp.dest(config.browserify.devDest)
          .pipe $.size({ title: 'js' })

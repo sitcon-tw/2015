@@ -8,6 +8,8 @@ reload = browsersSync.reload
 phonegap = require 'connect-phonegap'
 config = require '../config'
 
+$ = require('gulp-load-plugins')()
+
 gulp.task 'watch', ['js', 'sass', 'images', 'html', 'vendor'], ->
   browsersSync {
     server: {

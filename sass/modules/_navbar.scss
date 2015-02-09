@@ -1,0 +1,46 @@
+// Navigation Bar
+
+#main-menu {
+  padding-top: 50px;
+}
+
+.navbar-nav {
+  margin-top: 42px;
+
+  & > li > a {
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    color: $darkPrimaryColor;
+    text-transform: uppercase;
+
+    @include adjust-font-size-to(24px);
+
+    &:hover, &.active {
+      background: transparent;
+      color: $primaryColor;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & > li.active, & > li:hover, & > li:focus {
+    & > a {
+      background: transparent;
+    }
+  }
+
+  .divider {
+    padding: 9px 5px;
+
+    color: $darkPrimaryColor;
+    @include adjust-font-size-to(20px);
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
