@@ -10,6 +10,7 @@ Router = require 'react-router'
 RouteHandler = Router.RouteHandler
 
 Navigation = require './Navigation'
+Footer = require './Footer'
 
 App = React.createClass {
   displayName: 'App'
@@ -20,6 +21,7 @@ App = React.createClass {
         <div className="container">
           <RouteHandler />
         </div>
+        <Footer />
       </div>
     )
 }

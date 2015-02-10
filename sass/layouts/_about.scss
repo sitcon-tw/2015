@@ -8,13 +8,61 @@
     @include background-size(contain);
   }
 
-  .mask {
+  .landing-item-mask {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
 
+    overflow: hidden;
+
     background: image-url('mask.png');
+  }
+
+  .landing-item-content {
+    width: 100%;
+    min-height: 100%;
+
+    margin-left: -50%;
+
+    background: rgba($secondaryColor, 0.5);
+
+    @include transform(skewX(-20deg));
+
+    & .inner {
+      padding-left: 50%;
+      padding-right: 10%;
+
+      @include transform(skewX(20deg));
+    }
+
+    &.is-right {
+      margin-left: 50%;
+
+      @include transform(skewX(-20deg));
+
+      & .inner {
+        padding-left: 10%;
+        padding-right: 55%;
+
+        @include transform(skewX(20deg));
+      }
+    }
+  }
+
+  .landing-item-article {
+    padding-top: 20%;
+
+    color: $white;
+    @include adjust-font-size-to(18px);
+    @include clearfix;
+
+    line-height: 1.5em;
+
+    h1 {
+      font-weight: bold;
+      @include adjust-font-size-to(20px);
+    }
   }
 }

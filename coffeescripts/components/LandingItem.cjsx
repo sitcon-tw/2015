@@ -12,14 +12,22 @@ LandingItem = React.createClass {
       backgroundImage: "url('../images/#{@props.bg}')"
     }
 
+  getContentClass: ->
+    if @props.contentAlign is "right"
+      "landing-item-content is-right"
+    else
+      "landing-item-content"
+
   render: ->
 
     (
       <div className="row">
         <div className="col-md-12">
           <div className="landing-item" style={@getStyle()}>
-            <div className="mask">
-
+            <div className="landing-item-mask">
+              <div className={@getContentClass()}>
+                <div className="inner">{@props.content}</div>
+              </div>
             </div>
           </div>
         </div>
