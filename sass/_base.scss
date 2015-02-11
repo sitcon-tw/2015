@@ -21,3 +21,8 @@ body {
 }
 
 @include establish-baseline;
+
+.no-gutter [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}

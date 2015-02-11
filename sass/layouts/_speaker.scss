@@ -1,0 +1,58 @@
+// Speaker
+
+#speaker {
+  .speaker {
+    position: relative;
+    padding-top: 100%;
+
+    overflow: hidden;
+
+    &:hover {
+      .speaker-meta { @include transform(translateX(0%)); }
+      .speaker-avatar { @include opacity(0.5); }
+    }
+  }
+
+  .speaker-avatar {
+    @include transition(250ms ease-in-out);
+
+    img {
+      position: absolute;
+      top: 0;
+
+      max-width: 100%;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  .speaker-meta {
+    @include transition(150ms ease-out);
+    @include transform(translateX(100%));
+  }
+
+  .speaker-name {
+    position: absolute;
+    top: -2.2em;
+    right: 0;
+
+    padding: 0.25em 0.5em;
+
+    color: $white;
+    @include adjust-font-size-to(18px);
+
+    background: $primaryColor;
+  }
+
+  .speaker-bio {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    padding: 0.5em 1em;
+    @include adjust-font-size-to(16px);
+
+    color: $white;
+    background: $primaryColor;
+  }
+}
