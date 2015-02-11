@@ -15,4 +15,29 @@
     bottom: 0;
     left: 0;
   }
+
+  .map-meta {
+    width: 100%;
+
+    position: absolute;
+    bottom: 5em;
+
+
+    text-align: center;
+    @include adjust-font-size-to(24px);
+  }
+
+  .map-info-wrapper {
+    display: inline-block;
+    padding: 0.25em 1em;
+    margin: 0 auto;
+
+    color: $primaryColor;
+    border: 6px double $primaryColor;
+  }
+
+  .map-datetime {
+    font-weight: bold;
+    @include adjust-font-size-to(36px);
+  }
 }
