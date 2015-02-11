@@ -10,7 +10,13 @@ Sponsor = React.createClass {
   displayName: 'Sponsor'
   render: ->
     (
-      <div>Sponsor</div>
+      <div id="sponsor">
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <img src="images/sponsor.png" />
+          </div>
+        </div>
+      </div>
     )
 }
 
