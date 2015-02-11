@@ -5,6 +5,8 @@
     position: relative;
     padding-top: 100% * 9/16;
 
+    overflow: hidden;
+
     @include background-size(contain);
   }
 
@@ -20,7 +22,7 @@
     background: image-url('mask.png');
   }
 
-  .landing-item-content {
+  .landing-item-cover {
     width: 100%;
     min-height: 100%;
 
@@ -51,8 +53,15 @@
     }
   }
 
+  .landing-item-content {
+    position: absolute;
+    top: 7em;
+    right: 3em;
+    bottom: 7em;
+    left: 3em;
+  }
+
   .landing-item-article {
-    padding-top: 20%;
 
     color: $white;
     @include adjust-font-size-to(18px);

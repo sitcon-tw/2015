@@ -14,9 +14,9 @@ LandingItem = React.createClass {
 
   getContentClass: ->
     if @props.contentAlign is "right"
-      "landing-item-content is-right"
+      "landing-item-cover is-right"
     else
-      "landing-item-content"
+      "landing-item-cover"
 
   render: ->
 
@@ -26,9 +26,9 @@ LandingItem = React.createClass {
           <div className="landing-item" style={@getStyle()}>
             <div className="landing-item-mask">
               <div className={@getContentClass()}>
-                <div className="inner">{@props.content}</div>
               </div>
             </div>
+            <div className="landing-item-content">{@props.content}</div>
           </div>
         </div>
       </div>
