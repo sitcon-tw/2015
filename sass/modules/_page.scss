@@ -1,0 +1,20 @@
+// Page
+
+.page-enter {
+  @include opacity(0.01);
+  @include transition(500ms ease-in);
+
+  &.page-enter-active {
+    @include opacity(1);
+  }
+}
+
+.page-leave {
+  @include opacity(1);
+  @include transition(500ms ease-out);
+
+  &.page-leave-active {
+    @include opacity(0.01);
+  }
+}
+
