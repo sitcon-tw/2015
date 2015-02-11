@@ -12,6 +12,19 @@ assign = require 'react/lib/Object.assign'
 CHANGE_EVENT = 'CHANGE'
 
 _schedule = []
+_groupedSchedule = {}
+
+groupSchedule = (scheduleArray) ->
+  newSchedule = {}
+  for activity in scheduleArray
+    time = activity.start
+    newSchedule[time] = {} if !newSchedule[time]
+    newSchedule[time]['activities'] = {} if !newSchedule[time]['activities']
+    newSchedule[time]['activities'][activity.room] = activity
+    newSchedule[time]['start'] = activity.start
+    newSchedule[time]['end'] = activity.end
+
+  newSchedule
 
 dispatcher = (payload) ->
   action = payload.action
@@ -19,6 +32,7 @@ dispatcher = (payload) ->
   switch action.actionType
     when ScheduleConstant.SCHEDULE_LOAD
       _schedule = action.schedule
+      _groupedSchedule = groupSchedule(action.schedule)
       ScheduleStore.emitChange()
 
   # Dispatcher receive 'true' return to work
@@ -28,6 +42,9 @@ dispatcher = (payload) ->
 ScheduleStore = assign {}, EventEmitter.prototype, {
   getAll: ->
     _schedule
+
+  getTimebaseSchedule: ->
+    _groupedSchedule
 
   emitChange: ->
     @emit CHANGE_EVENT

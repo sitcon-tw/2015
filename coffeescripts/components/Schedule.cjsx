@@ -9,16 +9,21 @@ React = require 'react'
 ScheduleAction = require '../actions/ScheduleAction'
 ScheduleStore = require '../stores/Schedule'
 
+ScheduleTimeRow = require './ScheduleTimeRow'
+
 Schedule = React.createClass {
   displayName: 'Schedule'
   getInitialState: ->
     {
       schedule: []
+      timebasedSchedule: {}
     }
 
   _onChange: ->
-    @setState { schedule: ScheduleStore.getAll() }
-    console.log @state.schedule
+    @setState {
+      schedule: ScheduleStore.getAll()
+      timebasedSchedule: ScheduleStore.getTimebaseSchedule()
+    }
 
   componentDidMount: ->
     ScheduleAction.load()
@@ -27,14 +32,19 @@ Schedule = React.createClass {
   componentWillUnmount: ->
     ScheduleStore.removeChangeListener @_onChange
 
+  buildSchedule: ->
+    _scheduleTime = []
+    for time, activities of @state.timebasedSchedule
+      _scheduleTime.push(
+        <ScheduleTimeRow {...activities} />
+      )
+
+    _scheduleTime
+
   render: ->
     (
       <div id="schedule">
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <img src="images/comingsoon.png" />
-          </div>
-        </div>
+        {@buildSchedule()}
       </div>
     )
 }

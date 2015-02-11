@@ -1,0 +1,58 @@
+// Schedule
+
+#schedule {
+
+  .schedule-time {
+    padding: 0.25em 0.75em;
+    margin-bottom: 2em;
+
+    color: $white;
+    background: $primaryColor;
+  }
+
+  .session {
+    position: relative;
+
+    margin-bottom: 3em;
+    padding: 2em 1em 1em 1.25em;
+
+    border: 1px solid $primaryColor;
+
+    @include adjust-font-size-to(16px);
+  }
+
+  .is-talk {
+    .session-subject { font-weight: bold; }
+  }
+
+  .session-room {
+    position: absolute;
+    left: 1em;
+    top: -1em;
+
+    padding: 0.25em 0.5em;
+
+    color: $white;
+    background: $primaryColor;
+  }
+
+  .session-subject {
+    @include adjust-font-size-to(18px);
+  }
+
+  .session-speaker {
+    display: inline-block;
+
+    padding: 0.25em 0.5em;
+    margin: 0.5em 0 1em;
+
+    color: $white;
+    background: $primaryColor;
+  }
+
+  .session-abstract {
+    letter-spacing: 0.15em;
+    line-height: 1.5em;
+  }
+
+}
