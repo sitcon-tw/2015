@@ -35,9 +35,9 @@ Speaker = React.createClass {
     _tmpSpeakerGroup = []
 
     for speaker, index in @state.speakers
-      if (index + 1) % (_itemEachGroup + 1) != 0
-        _tmpSpeakerGroup.push(<SpeakerItem speaker={speaker} key={index} />)
-      else
+      _tmpSpeakerGroup.push(<SpeakerItem speaker={speaker} key={index} />)
+
+      if (index + 1) % _itemEachGroup is 0
         _speakerGroups.push(
           <div className="row no-gutter">
             {_tmpSpeakerGroup}
