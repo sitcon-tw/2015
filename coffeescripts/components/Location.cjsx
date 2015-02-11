@@ -12,8 +12,14 @@ Location = React.createClass {
   render: ->
     (
       <div id="location">
-        <div className="map-area">
-          <Map googleMapsApi={google.maps} />
+        <div className="row">
+          <div className="col-md-12">
+            <div className="map-frame">
+              <div className="map-area">
+                <Map googleMapsApi={google.maps} />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )

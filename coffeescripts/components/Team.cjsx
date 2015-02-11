@@ -10,7 +10,13 @@ Location = React.createClass {
   displayName: 'Location'
   render: ->
     (
-      <div>Location</div>
+      <div id="team">
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <img src="images/commingsoon.png" />
+          </div>
+        </div>
+      </div>
     )
 }
 

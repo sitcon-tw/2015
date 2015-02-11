@@ -1,8 +1,12 @@
 // Page
 
+.page-frame {
+  position: relative;
+}
+
 .page-enter {
   @include opacity(0.01);
-  @include transition(500ms ease-in);
+  @include transition(250ms ease-in);
 
   &.page-enter-active {
     @include opacity(1);
@@ -10,8 +14,14 @@
 }
 
 .page-leave {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  bottom: 0;
+  right: 15px;
+
   @include opacity(1);
-  @include transition(500ms ease-out);
+  @include transition(250ms ease-out);
 
   &.page-leave-active {
     @include opacity(0.01);

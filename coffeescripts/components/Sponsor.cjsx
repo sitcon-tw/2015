@@ -13,7 +13,7 @@ Sponsor = React.createClass {
       <div id="sponsor">
         <div className="row">
           <div className="col-md-12 text-center">
-            <img src="images/sponsor.png" />
+            <img src="images/commingsoon.png" />
           </div>
         </div>
       </div>

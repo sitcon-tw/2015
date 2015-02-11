@@ -1,9 +1,12 @@
 // Location
 
 #location {
-  position: relative;
 
-  padding-top: 100% * 9/16;
+  .map-frame {
+    position: relative;
+
+    padding-top: 100% * 9/16;
+   }
 
   .map-area {
     position: absolute;

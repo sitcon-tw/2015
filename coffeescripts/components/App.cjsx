@@ -22,7 +22,7 @@ App = React.createClass {
     (
       <div>
         <Navigation />
-        <div className="container">
+        <div className="container page-frame">
           <TransitionGroup component="div" transitionName="page">
             <RouteHandler key={name} />
           </TransitionGroup>
