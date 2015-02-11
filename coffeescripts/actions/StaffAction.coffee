@@ -9,7 +9,7 @@ Request = require 'superagent'
 
 StaffAction = {
   load: ->
-    Request.get 'https://staff.sitcon.org/api/groups/?format=json', (err, data) ->
+    Request.get 'https://staff.sitcon.org/api/staffgroups/?format=json', (err, data) ->
       Dispatcher.handleViewAction {
         actionType: StaffConstant.STAFF_LOAD
         staffs: data.body

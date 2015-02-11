@@ -1,0 +1,47 @@
+// Team
+
+#team {
+  .staff-group-title {
+    padding: 0.25em 0.5em;
+
+    border: 1px solid $primaryColor;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      right: 7px;
+      bottom: 14px;
+      left: 7px;
+
+      border-left: 2px solid $primaryColor;
+      border-right: 2px solid $primaryColor;
+    }
+  }
+
+  .staff {
+    position: relative;
+
+    text-align: center;
+
+    margin-bottom: 3em;
+  }
+
+  .staff-avatar {
+    max-width: 80%;
+  }
+
+  .staff-name {
+    position: absolute;
+    right: 0;
+    bottom: -1em;
+
+    padding: 0.25em 1em;
+
+    color: $white;
+    background: rgba($primaryColor, 0.8);
+
+    @include adjust-font-size-to(16px);
+
+  }
+}

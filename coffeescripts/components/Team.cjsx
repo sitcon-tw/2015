@@ -9,6 +9,8 @@ React = require 'react'
 StaffAction = require '../actions/StaffAction'
 StaffStore = require '../stores/Staffs'
 
+StaffGroup = require './StaffGroup'
+
 Location = React.createClass {
   displayName: 'Location'
   getInitialState: ->
@@ -26,14 +28,16 @@ Location = React.createClass {
   componentWillUnmount: ->
     StaffStore.removeChangeListener @_onChange
 
+  buildStaffGroupList: ->
+    @state.staffs.map (group) ->
+      (
+        <StaffGroup name={group.name} users={group.users} />
+      )
+
   render: ->
     (
       <div id="team">
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <img src="images/comingsoon.png" />
-          </div>
-        </div>
+        {@buildStaffGroupList()}
       </div>
     )
 }
