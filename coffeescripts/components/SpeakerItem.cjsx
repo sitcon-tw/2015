@@ -23,7 +23,7 @@ SpeakerItem = React.createClass {
               <div className="speaker-name">
                 {@props.speaker.speaker}
               </div>
-              {@props.speaker.speakerbio}
+              {@props.speaker.bio}
             </div>
           </div>
         </div>

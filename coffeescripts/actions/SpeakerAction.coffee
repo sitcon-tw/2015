@@ -10,10 +10,10 @@ Request = require 'superagent'
 
 SpeakerAction = {
   load: ->
-    Request.get 'https://staff.sitcon.org/submission/api/all', (err, data) ->
+    Request.get 'https://staff.sitcon.org/api/submissions/?format=json', (err, data) ->
       Dispatcher.handleViewAction {
         actionType: SpeakerConstant.SPEAKER_LOAD
-        speakers: data.body.submissions
+        speakers: data.body
       }
 }
 
