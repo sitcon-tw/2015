@@ -13,7 +13,7 @@ Schedule = React.createClass {
       <div id="schedule">
         <div className="row">
           <div className="col-md-12 text-center">
-            <img src="images/commingsoon.png" />
+            <img src="images/comingsoon.png" />
           </div>
         </div>
       </div>
