@@ -9,7 +9,7 @@ LandingItem = React.createClass {
 
   getStyle: ->
     {
-      backgroundImage: "url('../images/#{@props.bg}')"
+      backgroundImage: "url('images/#{@props.bg}')"
     }
 
   getContentClass: ->
