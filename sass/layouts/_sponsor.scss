@@ -1,0 +1,50 @@
+// Sponsor
+
+#sponsor {
+  .sponsor-group-title {
+    position: relative;
+    padding: 0.25em 0.5em;
+    margin-bottom: 1.5em;
+
+    color: $white;
+    background: $primaryColor;
+
+    @include adjust-font-size-to(24px, 1.15);
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -0.5em;
+      left: 0;
+      right: 0;
+
+      border: 2px solid $primaryColor;
+    }
+  }
+
+  .sponsor {
+    position: relative;
+    padding: 1em;
+    margin-bottom: 1.5em;
+
+    overflow: hidden;
+  }
+
+  .sponsor-logo {
+    max-width: 100%;
+    background: $white;
+  }
+
+  .sponsor-name {
+    position: absolute;
+    top: 0em;
+    left: 0;
+
+    padding: 0.25em 0.5em;
+
+    color: $white;
+    background: $primaryColor;
+
+    @include adjust-font-size-to(16px);
+  }
+}
