@@ -13,7 +13,7 @@ Footer = React.createClass {
       <footer id="footer" className="container">
         <div className="row">
           <div className="col-md-12">
-            &copy; 2014 Students’ Information Technology Conference
+            &copy; 2015 Students’ Information Technology Conference
           </div>
         </div>
       </footer>
