@@ -3,3 +3,8 @@
 .coffeescript-cache/
 fire_app_log.txt
 build_*/
+compass/
+bower_components/
+normalize/
+node_modules/
+npm-debug.log
