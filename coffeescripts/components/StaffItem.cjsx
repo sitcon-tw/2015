@@ -9,6 +9,7 @@ React = require 'react'
 StaffItem = React.createClass {
   displayName: 'StaffItem'
   getAvatarUrl: ->
+    return "https://staff.sitcon.org#{@props.avatar}" if @props.avatar.indexOf('/') is 0
     "#{@props.avatar}&s=200"
   render: ->
     (
