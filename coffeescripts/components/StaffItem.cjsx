@@ -15,7 +15,9 @@ StaffItem = React.createClass {
     (
       <div className="col-md-2">
         <div className="staff">
-          <img src={@getAvatarUrl()} className="staff-avatar" />
+          <div className="staff-avatar-frame">
+            <img src={@getAvatarUrl()} className="staff-avatar" />
+          </div>
           <div className="staff-name">
             {@props.display_name}
           </div>

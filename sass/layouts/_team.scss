@@ -27,8 +27,20 @@
     margin-bottom: 3em;
   }
 
+  .staff-avatar-frame {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+
+    padding-top: 80%;
+  }
+
   .staff-avatar {
-    max-width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    max-width: 100%;
   }
 
   .staff-name {
