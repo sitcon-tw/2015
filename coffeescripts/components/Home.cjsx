@@ -19,7 +19,7 @@ Home = React.createClass {
         </div>
         <div className="row">
           <div className="col-md-5">
-            <h1>Students' Creative & Practice</h1>
+            <h1>Innovation &amp; Implementation</h1>
             <p>SITCON 一直以來鼓勵學生培養動手做的能力與習慣，2015 年也不例外，座談會仍然會聚焦在「學生與創新實作」相關議題。</p>
           </div>
         </div>
@@ -40,7 +40,7 @@ Home = React.createClass {
         <div className="row">
           <div className="col-md-6 col-md-offset-6">
             <p>
-            他們說 ”Information wants to be free.” ，資訊不應由少數人壟斷，他們早已看透，電腦普及之後，資訊的傳播複製將會以數千倍數萬倍的速度且幾乎零成本的方式進行。有了電腦，更應該讓資訊自由地流通，而非限制它。他們更致力於將電腦普及化，他們相信電腦可以改善人的生活，電腦不應被鎖在企業與政府的層層權威與官僚當中。
+            他們說 “Information wants to be free. ” 資訊不應由少數人壟斷，他們早已看透，電腦普及之後，資訊的傳播複製將會以數千倍數萬倍的速度且幾乎零成本的方式進行。有了電腦，更應該讓資訊自由地流通，而非限制它。他們更致力於將電腦普及化，他們相信電腦可以改善人的生活，電腦不應被鎖在企業與政府的層層權威與官僚當中。
 
             初代駭客們的理念影響了無數人，在各個領域當中發芽茁壯，無論是自由軟體運動、資訊安全、自造者運動、和吹哨者們，都是駭客精神的展現。
             </p>
