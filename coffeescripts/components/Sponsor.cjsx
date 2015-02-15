@@ -29,6 +29,7 @@ cohost = [
   {
     name: '中央研究院資訊科學研究所'
     logo: 'iis.png'
+    link: 'http://www.iis.sinica.edu.tw/'
   }
   {
     name: '國立交通大學資訊工程學系'
