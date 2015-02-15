@@ -1,0 +1,17 @@
+// Button
+
+.btn {
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+  background: transparent;
+
+  @include border-radius(0px);
+}
+
+.btn-primary {
+  &:hover, &:active, &:focus {
+    border: 1px solid $primaryColor;
+    color: $white;
+    background: $primaryColor;
+  }
+}

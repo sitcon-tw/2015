@@ -4,6 +4,7 @@
 
 React = require 'react'
 
+LandingParallax = require './LandingParallax'
 LandingItem = require './LandingItem'
 
 Home = React.createClass {
@@ -52,6 +53,7 @@ Home = React.createClass {
   render: ->
     (
       <div id="about">
+        <LandingParallax />
         <LandingItem bg="landing_bg.jpg" content={@getFirstLandingContent()} />
         <LandingItem bg="landing_bg2.jpg" contentAlign="right" content={@getSecondaryLandingContent()} />
       </div>

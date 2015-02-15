@@ -75,3 +75,98 @@
     }
   }
 }
+
+// Landing Parallax
+
+.parallax-scene, .layer {
+  width: 100%;
+  height: 100%;
+}
+
+.layer {
+  position: absolute;
+}
+
+#landing-parallax {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .landing-logo {
+    position: absolute;
+  }
+
+  .position1 {
+    top: 50%;
+    left: 15%;
+
+    @include transform(rotate(15deg));
+  }
+
+  .position2 {
+    top: 35%;
+    right: 19%;
+
+    @include transform(rotate(-20deg));
+  }
+
+  .position3 {
+    top: 70%;
+    left: 35%;
+
+    @include transform(rotate(-67deg));
+  }
+
+  .position4 {
+    top: 80%;
+    right: 40%;
+
+    @include transform(rotate(55deg));
+  }
+}
+
+#landing-character-left {
+  img {
+    position: absolute;
+    top: 2em;
+    left: 15%;
+  }
+}
+
+#landing-character-right {
+  img {
+    position: absolute;
+    top: 2em;
+    right: 20%;
+  }
+}
+
+#landing-register {
+  text-align: center;
+  padding-top: 7em;
+
+  a {
+    width: 120px;
+    height: 120px;
+
+    @include adjust-font-size-to(18px);
+    line-height: 110px;
+
+    @include border-radius(50%);
+
+    color: $white;
+    background: $primaryColor center;
+
+    @include transition(150ms ease-in);
+
+    &:hover {
+      text-indent: -999999px;
+      color: $primaryColor;
+      background-image: image-url('cross.png');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
