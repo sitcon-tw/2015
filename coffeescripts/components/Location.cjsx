@@ -21,7 +21,7 @@ Location = React.createClass {
               <div className="map-meta">
                 <div className="map-info-wrapper">
                   <div className="map-datetime">MAR 07</div>
-                  <div className="map-location">中央研究院 人文科學會館</div>
+                  <div className="map-location">中央研究院 人文社會科學館</div>
                 </div>
               </div>
             </div>
