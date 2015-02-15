@@ -60,6 +60,11 @@ thanks = [
     name: 'CPRTeam'
     logo: 'CPRTeam.png'
   }
+  {
+    name: 'DCard'
+    logo: 'dcard.png'
+    link: 'https://www.dcard.tw/'
+  }
 ]
 
 partner = [
