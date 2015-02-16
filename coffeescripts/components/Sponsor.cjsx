@@ -37,6 +37,11 @@ cohost = [
     link: 'http://www.cs.nctu.edu.tw/cswebsite/'
   }
   {
+    name: '財團法人資訊工業策進會南區產業服務處'
+    logo: 'iii.png'
+    link: 'http://sid2.iii.org.tw/main.php'
+  }
+  {
     name: '師大附中網管小組'
     logo: 'hs-ntnu.png'
     link: 'http://www.hs.ntnu.edu.tw/~computer/cnmc.htm'
@@ -48,6 +53,19 @@ goldSponsor = [
     name: '聯發科技'
     logo: 'mediatek.png'
     link: 'http://www.mediatek.com'
+  }
+  {
+    name: '祐生研究基金會'
+    logo: 'archilife.png'
+    link: 'http://www.archilife.org/'
+  }
+]
+
+sliver = [
+  {
+    name: 'AppWorks'
+    logo: 'appworks.png'
+    link: 'http://appworks.tw/'
   }
 ]
 
@@ -97,6 +115,7 @@ Sponsor = React.createClass {
         <SponsorGroup sponsorLevel="共同主辦" rowItem={2} sponsors={host} />
         <SponsorGroup sponsorLevel="協辦單位" rowItem={3} sponsors={cohost} />
         <SponsorGroup sponsorLevel="Gold" rowItem={2} sponsors={goldSponsor} />
+        <SponsorGroup sponsorLevel="Sliver" rowItem={3} sponsors={sliver} />
         <SponsorGroup sponsorLevel="特別感謝" rowItem={3} sponsors={thanks} />
         <SponsorGroup sponsorLevel="會議夥伴" rowItem={3} sponsors={partner} />
         <SponsorGroup sponsorLevel="媒體夥伴" rowItem={3} sponsors={media} />
