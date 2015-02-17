@@ -13,7 +13,7 @@ LandingParallax = React.createClass {
   displayName: 'LandingParallax'
   render: ->
     (
-      <div className="landing-item">
+      <div className="landing-parallax-item">
         <div id="landing-parallax">
           <ParallaxScene>
             <ParallaxItem depth="0.8"><img className="landing-logo position1" src="images/logo-icon.png" /></ParallaxItem>

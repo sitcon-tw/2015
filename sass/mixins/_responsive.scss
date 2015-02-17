@@ -1,0 +1,17 @@
+// Responsive Helper Mixin
+
+@mixin at-breakpoint($min-width, $max-width: null) {
+  @if $max-width == "invert" {
+    @media (max-width: $min-width) {
+      @content;
+    }
+  } @else if $max-width == null {
+    @media (min-width: $min-width) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+      @content;
+    }
+  }
+}
