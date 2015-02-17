@@ -4,22 +4,67 @@
   padding-top: 50px;
 }
 
+.container > .navbar-header {
+  @include at-breakpoint($screen-sm, $screen-md) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.navbar-brand {
+  @include at-breakpoint($screen-sm, $screen-md) {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .navbar-nav {
-  margin-top: 42px;
+  @include at-breakpoint($screen-sm) {
+    margin-top: 42px;
+  }
+
+  @include at-breakpoint($screen-sm, $screen-md) {
+    width: 100%;
+    text-align: center;
+  }
+
+  & > li {
+    padding: 0 1em;
+    text-align: center;
+
+    @include at-breakpoint($screen-sm, $screen-md) {
+      padding: 0;
+      float: none;
+      display: inline-block;
+    }
+
+    @include at-breakpoint($screen-md) {
+      padding: 0;
+    }
+  }
 
   & > li > a {
     padding: 5px;
     padding-top: 0;
     padding-bottom: 0;
 
-    color: $darkPrimaryColor;
+    color: rgba($white, 0.7);
     text-transform: uppercase;
 
     @include adjust-font-size-to(24px);
 
+    @include at-breakpoint($screen-sm) {
+      color: $darkPrimaryColor;
+    }
+
     &:hover, &.active {
       background: transparent;
-      color: $primaryColor;
+      color: $white;
+
+      @include at-breakpoint($screen-sm) {
+        color: $primaryColor;
+      }
     }
 
     &:focus {
@@ -34,13 +79,62 @@
   }
 
   .divider {
+    display: none;
     padding: 9px 5px;
 
     color: $darkPrimaryColor;
     @include adjust-font-size-to(20px);
 
+    @include at-breakpoint($screen-sm) {
+      display: inline-block;
+    }
+
+    @include at-breakpoint($screen-md) {
+      display: block;
+    }
+
     &:last-child {
       display: none;
+    }
+  }
+}
+
+.navbar-styled {
+  .navbar-toggle {
+    padding-top: 52px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    .icon-bar {
+      background-color: $primaryColor;
+    }
+  }
+
+  .navbar-collapse {
+    @include box-shadow(none);
+    @include transition(500ms ease-in-out);
+
+    @include at-breakpoint($screen-sm, invert) {
+      position: absolute;
+      margin-top: 1em;
+      width: 100%;
+      z-index: 9999;
+
+      background: $primaryColor;
+
+      @include opacity(0);
+    }
+
+    &.in {
+      max-height: 1000%;
+      @include opacity(1);
+    }
+  }
+
+  .collapse {
+    @include at-breakpoint($screen-sm, invert) {
+      display: block;
+      max-height: 0%;
     }
   }
 }
