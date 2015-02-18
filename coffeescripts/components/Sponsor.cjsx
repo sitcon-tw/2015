@@ -105,6 +105,11 @@ media = [
     logo: 'punnode.png'
     link: 'http://punnode.com'
   }
+  {
+    name: '數位時代'
+    logo: 'bnext.png'
+    link: 'http://www.bnext.com.tw/'
+  }
 ]
 
 Sponsor = React.createClass {
