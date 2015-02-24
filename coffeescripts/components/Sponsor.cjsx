@@ -55,6 +55,11 @@ goldSponsor = [
     link: 'http://www.mediatek.com'
   }
   {
+    name: 'VIVOTEK'
+    logo: 'vivotek.png'
+    link: 'http://vvtk-digest.blogspot.tw/'
+  }
+  {
     name: '祐生研究基金會'
     logo: 'archilife.png'
     link: 'http://www.archilife.org/'
@@ -67,9 +72,24 @@ sliver = [
     logo: 'appworks.png'
     link: 'http://appworks.tw/'
   }
+  {
+    name: '五倍紅寶石'
+    logo: '5xruby.png'
+    link: 'http://5xruby.tw'
+  }
+  {
+    name: 'livehouse.in'
+    logo: 'livehousein.png'
+    linl: 'http://livehouse.in'
+  }
 ]
 
 thanks = [
+  {
+    name: 'CLBC'
+    logo: 'clbc.png'
+    link: 'http://clbc.tw'
+  }
   {
     name: 'KKTIX'
     logo: 'kktix.png'
@@ -83,6 +103,11 @@ thanks = [
     name: 'DCard'
     logo: 'dcard.png'
     link: 'https://www.dcard.tw/'
+  }
+  {
+    name: 'Coworking Taiwan 台灣共用工作空間交流協會'
+    logo: 'coworkingtw.png'
+    link: 'http://coworking.tw'
   }
 ]
 
@@ -109,6 +134,11 @@ media = [
     name: '數位時代'
     logo: 'bnext.png'
     link: 'http://www.bnext.com.tw/'
+  }
+  {
+    name: '關鍵評論網'
+    logo: 'thenewslens.png'
+    link: 'http://www.thenewslens.com/'
   }
 ]
 
