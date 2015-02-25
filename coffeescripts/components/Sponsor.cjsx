@@ -66,7 +66,7 @@ goldSponsor = [
   }
 ]
 
-sliver = [
+silver = [
   {
     name: 'AppWorks'
     logo: 'appworks.png'
@@ -150,7 +150,7 @@ Sponsor = React.createClass {
         <SponsorGroup sponsorLevel="共同主辦" rowItem={2} sponsors={host} />
         <SponsorGroup sponsorLevel="協辦單位" rowItem={3} sponsors={cohost} />
         <SponsorGroup sponsorLevel="Gold" rowItem={2} sponsors={goldSponsor} />
-        <SponsorGroup sponsorLevel="Sliver" rowItem={3} sponsors={sliver} />
+        <SponsorGroup sponsorLevel="Silver" rowItem={3} sponsors={silver} />
         <SponsorGroup sponsorLevel="特別感謝" rowItem={3} sponsors={thanks} />
         <SponsorGroup sponsorLevel="會議夥伴" rowItem={3} sponsors={partner} />
         <SponsorGroup sponsorLevel="媒體夥伴" rowItem={3} sponsors={media} />
