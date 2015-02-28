@@ -45,6 +45,14 @@ Speaker = React.createClass {
         )
         _tmpSpeakerGroup = []
 
+    if (index + 1) % _itemEachGroup > 0
+
+        _speakerGroups.push(
+          <div className="row no-gutter">
+            {_tmpSpeakerGroup}
+          </div>
+        )
+
     _speakerGroups
 
   render: ->
