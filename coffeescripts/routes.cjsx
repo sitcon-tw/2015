@@ -15,6 +15,7 @@ NotFoundRoute = Router.NotFoundRoute
 
 App = require './components/App'
 Home = require './components/Home'
+About = require './components/About'
 Location = require './components/Location'
 Speaker = require './components/Speaker'
 Schedule = require './components/Schedule'
@@ -24,6 +25,7 @@ Team = require './components/Team'
 module.exports = (
   <Route name="App" path="/" handler={App}>
     <DefaultRoute handler={Home} />
+    <Route name="About" handler={About}/>
     <Route name="Location" handler={Location}/>
     <Route name="Speaker" handler={Speaker}/>
     <Route name="Schedule" handler={Schedule}/>

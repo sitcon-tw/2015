@@ -6,27 +6,10 @@ React = require 'react'
 
 LandingParallax = require './LandingParallax'
 LandingItem = require './LandingItem'
+VideoEmbed = require './VideoEmbed'
 
 Home = React.createClass {
   display: 'HomePage'
-  getFirstLandingContent: ->
-    (
-      <div className="landing-item-article">
-        <div className="row">
-          <div className="col-md-6">
-            <h1>About Us</h1>
-            <p>SITCON 學生計算機年會，由對資訊抱持熱誠的學生們所組成的同名社群自發籌辦，希望能透過技術與知識的激盪，給予學生們一個用自身力量實踐夢想的舞台。本屆年會之主軸聚焦於真正的駭客精神，The True Hackers 。希望讓大家瞭解駭客精神的中心思想，以及駭客精神在各個領域的展現。</p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-5">
-            <h1>Innovation &amp; Implementation</h1>
-            <p>SITCON 一直以來鼓勵學生培養動手做的能力與習慣，2015 年也不例外，座談會仍然會聚焦在「學生與創新實作」相關議題。</p>
-          </div>
-        </div>
-      </div>
-    )
-
   getSecondaryLandingContent: ->
     (
       <div className="landing-item-article">
@@ -54,7 +37,7 @@ Home = React.createClass {
     (
       <div id="about">
         <LandingParallax />
-        <LandingItem bg="landing_bg.jpg" content={@getFirstLandingContent()} />
+        <VideoEmbed type="youtube" link="SDFiZyU4mTw" />
         <LandingItem bg="landing_bg2.jpg" contentAlign="right" content={@getSecondaryLandingContent()} />
       </div>
     )

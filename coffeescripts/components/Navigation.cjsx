@@ -9,7 +9,7 @@ Router = require 'react-router'
 Link = Router.Link
 
 menuItems = {
-  'About': '/'
+  'About': 'About'
   'Location': 'Location'
   'Speaker': 'Speaker'
   'Schedule': 'Schedule'

@@ -230,3 +230,17 @@
     }
   }
 }
+
+#coc {
+  color: $white;
+
+  margin-top: 1em;
+
+  p {
+    @include adjust-font-size-to(18px, 1.25);
+  }
+
+  li {
+    @include adjust-font-size-to(18px, 1.25);
+  }
+}
