@@ -55,6 +55,11 @@ goldSponsor = [
     link: 'http://www.mediatek.com'
   }
   {
+    name: 'Etu'
+    logo: 'etu.png'
+    link: 'http://www.etusolution.com/'
+  }
+  {
     name: 'VIVOTEK'
     logo: 'vivotek.png'
     link: 'http://vvtk-digest.blogspot.tw/'
@@ -63,6 +68,16 @@ goldSponsor = [
     name: '祐生研究基金會'
     logo: 'archilife.png'
     link: 'http://www.archilife.org/'
+  }
+  {
+    name: 'Gitcafe'
+    logo: 'gitcafe.png'
+    link: 'http://gitcafe.com'
+  }
+  {
+    name: 'livehouse.in'
+    logo: 'livehousein.png'
+    linl: 'http://livehouse.in'
   }
 ]
 
@@ -78,13 +93,18 @@ silver = [
     link: 'http://5xruby.tw'
   }
   {
-    name: 'livehouse.in'
-    logo: 'livehousein.png'
-    linl: 'http://livehouse.in'
+    name: '廣達電腦'
+    logo: 'quantatw.png'
+    link: 'http://www.quantatw.com/'
   }
 ]
 
 thanks = [
+  {
+    name: 'TiC100 智能城市與物聯網創新競賽'
+    logo: 'tic100.png'
+    link: 'http://www.tic100.org.tw'
+  }
   {
     name: 'CLBC'
     logo: 'clbc.png'
@@ -108,6 +128,16 @@ thanks = [
     name: 'Coworking Taiwan 台灣共用工作空間交流協會'
     logo: 'coworkingtw.png'
     link: 'http://coworking.tw'
+  }
+  {
+    name: '中國文化大學'
+    logo: 'pccu.png'
+    link: 'http://www.pccu.edu.tw'
+  }
+  {
+    name: '公民攝影守護民主陣線'
+    logo: 's4d.png'
+    link: 'http://s4d.tw'
   }
 ]
 
@@ -139,6 +169,16 @@ media = [
     name: '關鍵評論網'
     logo: 'thenewslens.png'
     link: 'http://www.thenewslens.com/'
+  }
+  {
+    name: 'TechNews 科技新報'
+    logo: 'technews.png'
+    link: 'http://technews.tw/'
+  }
+  {
+    name: '國立教育廣播電台'
+    logo: 'ner.png'
+    link: 'http://news.ner.gov.tw/'
   }
 ]
 
