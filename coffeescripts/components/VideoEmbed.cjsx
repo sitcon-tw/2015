@@ -10,7 +10,7 @@ VideoEmbed = React.createClass {
   displayName: 'VideoEmbed'
   getYotutbeVideo: ->
     (
-      <iframe type="text/html" width="100%" height="100%" src="https://www.youtube.com/embed/#{@props.link}?theme=light&controls=0&showinfo=0&color=white&loop=0" frameborder="0" style={border: "none"}/>
+      <iframe type="text/html" width="100%" height="100%" src="https://www.youtube.com/embed/#{@props.link}?theme=light&controls=0&showinfo=0&color=white&loop=0&rel=0" frameborder="0" style={border: "none"}/>
     )
   getVideoContent: ->
     return @getYotutbeVideo() if @props.type == "youtube"
