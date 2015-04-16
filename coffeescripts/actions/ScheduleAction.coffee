@@ -10,7 +10,7 @@ Request = require 'superagent'
 
 ScheduleAction = {
   load: ->
-    Request.get 'https://staff.sitcon.org/api/activities/?format=json', (err, data) ->
+    Request.get '../json/activities.json', (err, data) ->
       Dispatcher.handleViewAction {
         actionType: ScheduleConstant.SCHEDULE_LOAD
         schedule: data.body
