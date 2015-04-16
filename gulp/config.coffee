@@ -43,6 +43,11 @@ module.exports = {
     dest: DEST_PATH
     devDest: TMP_PATH
   }
+  json: {
+    src: SRC_PATH + 'json/**/*'
+    dest: DEST_PATH + 'json'
+    devDest: TMP_PATH + 'json'
+  }
   browserSync: {
     baseDir: [TMP_PATH, DEST_PATH]
     routes: {

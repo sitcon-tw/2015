@@ -10,7 +10,7 @@ config = require '../config'
 
 $ = require('gulp-load-plugins')()
 
-gulp.task 'watch', ['js', 'sass', 'images', 'html', 'vendor'], ->
+gulp.task 'watch', ['js', 'sass', 'images', 'html', 'vendor', 'json'], ->
   browsersSync {
     server: {
       baseDir: config.browserSync.baseDir
@@ -23,3 +23,4 @@ gulp.task 'watch', ['js', 'sass', 'images', 'html', 'vendor'], ->
   gulp.watch config.images.src, ['images', reload]
   gulp.watch config.html.src, ['html', reload]
   gulp.watch config.vendor.src, ['vendor', reload]
+  gulp.watch config.json.src, ['json', reload]
