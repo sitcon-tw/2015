@@ -973,9 +973,6 @@ SpeakerItem = React.createClass({
   getSpeakerAvatar: function() {
     var avatarUrl;
     avatarUrl = this.props.speaker.avatar;
-    if (avatarUrl.indexOf('/') === 0) {
-      return "https://staff.sitcon.org" + avatarUrl;
-    }
     return "" + avatarUrl + "&s=400";
   },
   render: function() {
@@ -1367,9 +1364,6 @@ React = require('react');
 StaffItem = React.createClass({
   displayName: 'StaffItem',
   getAvatarUrl: function() {
-    if (this.props.avatar.indexOf('/') === 0) {
-      return "https://staff.sitcon.org" + this.props.avatar;
-    }
     return "" + this.props.avatar + "&s=200";
   },
   render: function() {
