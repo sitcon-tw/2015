@@ -973,7 +973,7 @@ SpeakerItem = React.createClass({
   getSpeakerAvatar: function() {
     var avatarUrl;
     avatarUrl = this.props.speaker.avatar;
-    return "" + avatarUrl + "&s=400";
+    return "" + avatarUrl + "?s=400";
   },
   render: function() {
     return React.createElement("div", {
@@ -1364,7 +1364,7 @@ React = require('react');
 StaffItem = React.createClass({
   displayName: 'StaffItem',
   getAvatarUrl: function() {
-    return "" + this.props.avatar + "&s=200";
+    return "" + this.props.avatar + "?s=200";
   },
   render: function() {
     return React.createElement("div", {
