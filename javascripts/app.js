@@ -291,7 +291,7 @@ Home = React.createClass({
       "id": "about"
     }, React.createElement(LandingParallax, null), React.createElement(VideoEmbed, {
       "type": "youtube",
-      "link": "SDFiZyU4mTw"
+      "link": "DvUM2QSQC3Y"
     }), React.createElement(LandingItem, {
       "bg": "landing_bg2.jpg",
       "contentAlign": "right",
